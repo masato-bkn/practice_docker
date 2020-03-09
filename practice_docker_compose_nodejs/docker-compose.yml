@@ -1,0 +1,15 @@
+version: '3'
+services:
+  # サービス名 任意の名前でok
+  nuxt: 
+    # ビルドコンテキスト
+    build: .
+    tty: true
+    # コンテナ起動時のコマンド
+    command: npm run dev
+    # バイトマウント
+    volumes: 
+      - .:/app
+    # コンテナ内部の3000を外部から8080でアクセス
+    ports: 
+      - "8080:3000"

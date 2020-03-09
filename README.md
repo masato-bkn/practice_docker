@@ -85,6 +85,9 @@
 ■　コンテナ一時停止解除
 > docker unpause  コンテナ名
 
+■ コンテナの前停止
+> docker stop &(docker ps -q)
+
 ■ コンテナのシェルに接続
 > docker attach コンテナ名
 
